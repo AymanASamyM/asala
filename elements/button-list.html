@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            article{
+                /* background-color:blue; */
+                
+                display: flex;
+                width:80%;
+                margin: auto;
+            }
+
+
+            ul,li,a{
+                display: flex;
+            }
+            ul{
+                flex-wrap: wrap;
+                flex-basis: 100%;
+                align-items: center;
+            }
+            a{
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+            a.defult{
+                color:var(--pure-white-color);
+                background-color:var(--action-color);
+            }
+            a.not-defult{
+                color:var(--action-color);
+            }
+            a.defult:hover{
+                background-color:var(--dark-action-color);
+            }
+            a.not-defult:hover{
+                color:var(--headings-color);
+                background-color:var(--light-gray-color);
+            }
+        </style>
+        <link rel="stylesheet" href="css/variables.css">
+    </head>
+    <body>
+        <article>
+            <!-- startList -->
+            <ul>
+                <li>
+                    <a class="defult" href="">link</a>
+                </li>
+                <li>
+                    <a class="not-defult" href="">link</a>
+                </li>
+                <li>
+                    <a class="not-defult" href="">link</a>
+                </li>
+                <li>
+                    <a class="not-defult" href="">link</a>
+                </li>
+            </ul>
+            <!-- endList -->
+        </article>
+    </body>
+</html>

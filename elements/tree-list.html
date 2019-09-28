@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            article{
+                /* background-color:blue; */
+                
+                display: flex;
+                width:80%;
+                margin: auto;
+            }
+
+
+            ul,li,a{
+                display: flex;
+            }
+            ul{
+                flex-wrap: wrap;
+                flex-basis: 100%;
+                align-items: center;
+            }
+            a{
+                color:var(--gray-color);
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+            li:last-of-type a{
+                cursor: text;
+            }
+            li:not(:last-of-type) a{
+                color:var(--action-color);
+            }
+        </style>
+        <link rel="stylesheet" href="css/variables.css">
+    </head>
+    <body>
+        <article>
+            <!-- startList -->
+            <ul>
+                <li>
+                    <a href="">link</a>
+                </li>
+                <li>
+                    <a href="">link</a>
+                </li>
+                <li>
+                    <a href="">link</a>
+                </li>
+                <li>
+                    <a href="">link</a>
+                </li>
+            </ul>
+            <!-- endList -->
+        </article>
+    </body>
+</html>

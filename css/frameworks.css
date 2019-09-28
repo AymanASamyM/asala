@@ -1,0 +1,25 @@
+
+.nav-font{
+    font-size: var(--nav-font);
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.tree-font{
+    font-size: var(--tree-font);
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.action-font{
+    font-size: var(--action-font);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 1.42;
+}
+.text-font{
+    font-size: var(--text-font);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 1.42;
+}

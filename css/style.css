@@ -1,0 +1,468 @@
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startFrameWork === === === === === === === === === === ==*/
+.thumbnail{
+    background-color:#FFF;
+    border:3px dashed var(--body-color);
+    padding: 3px;
+}
+.over-lay{
+    /*start for parent of over-lay*/
+    
+/*
+    position: relative;
+    height: 500px;
+    
+*/
+    
+    /*end for parent of over-lay*/
+    
+    background-color: #14171aa0;
+    
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width:100%;
+    height:100%;
+}
+.link{
+    color: var(--h2-color);
+    
+}
+.box-decoration{
+    box-shadow: 0px 0px 150px 20px var(--h2-color);
+    
+}
+.flex-box{
+    
+    display: flex;
+}
+.full-width{
+    
+    flex-basis: 100%;
+}
+.wrap{
+    
+    flex-wrap: wrap;
+}
+.no-wrap{
+    
+    flex-wrap: nowrap;
+}
+.circle{
+    
+    border-radius:50%;
+}
+.border{
+    border-style: solid;
+    
+    border-width: 1px;
+    
+}
+.capital{
+    text-transform: capitalize;
+    
+}
+.uppercase{
+    text-transform: uppercase;
+    
+}
+.lowercase{
+    text-transform: lowercase;
+    
+}
+.mrgn-btm{
+    margin-bottom: 10px;
+}
+.hr{
+    width: 80px;
+    height: 1px;
+    margin: 30px 0;
+    background-color: var(--h2-color);
+    border-color: transparent;
+}
+.btn{
+    color: var(--body-color);
+    background-color: var(--h2-color);
+
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+
+    font-weight: bold;
+}
+.arw{
+    color: var(--p-color);
+    background-color: var(--body-color);
+    box-shadow: 0 0 2px 0 var(--p-color);
+
+    border: none;
+    border-radius: 40px;
+    padding: 15px 20px;
+
+    font-weight: bold;
+}
+.arw:hover{
+    color: var(--body-color);
+    background-color: var(--h2-color);
+}
+.hyd-element{
+    visibility: hidden!important;
+
+}
+.rmv-element{ 
+    display: none!important;
+}
+.wtr-mrk{       /*water mark*/
+    color: #e6dada;
+    
+    position: absolute;
+    z-index: -1;
+    top:-100px;         /*Adjustable*/
+
+    font-size: 150px;
+}
+.relative{
+    position: relative;
+}
+
+                /*=== === === === === Start ProgressBar === === === === === */
+[class^="progress-"]{
+    border: 1px solid var(--body-color);
+    
+    height: 40px;
+    padding:1px;
+}
+[class^="progress-"] .prog-bar{
+    background-color: var(--body-color);
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[class^="progress-"] .prog-bar .percentage{
+    color:var(--grand-color);
+    
+    text-align: start;
+    font-size: calc(var(--p-font)*.7);
+}
+                /*=== === === === === End ProgressBar === === === === === ==*/
+
+                /*=== === === === === === === === === === endFrameWork === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startRules === === === === === === === === === === === ==*/
+
+:root{
+/* color:     */
+
+    --odoo-color: #875A7B;
+    --gray-color: #8F8F8F;
+    --action-color: #00A09D;      /*Primary/Action*/
+
+/* background: */
+
+    --Light-gray-color: #F9F9F9;
+    --Pure-white-color: #FFFFFF;
+/* 
+    Gradient | #875A7B, 
+*/
+/* color:#62495B; */
+/* typo: */
+
+    --headings-color: #21272B;
+    --body-color: #282F33;
+    --muted-color: #6B6D70;
+/* 
+    Montserrat, weight 400, line-height: 1.1
+    Open Sans, weight 400, line-height: 1.42 
+*/
+    
+    --h3-font:24px;  
+/*
+    --h2-font:70px;  
+    --h4-font:40px;     
+    --h5-font:30px;
+    --h6-font:40px;    
+    --p-font:30px;  
+    */
+    
+    --xxs:calc(320px/12);
+    --xs:calc(480px/12);
+    --s:calc(768px/12);
+    --m:calc(992px/12);
+    --l:calc(1200px/12);
+}
+*{
+    
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body > * > .container{
+    margin: auto;
+}
+.mini{
+    display: flex;
+}
+article{
+    display: flex;
+}
+h2,h3,h4,h5,h6,  label,span,ul{
+    text-transform: capitalize;
+}
+h3{
+    font-size: var(--h3-font);
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.1;
+}
+p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 1.42;
+}
+img{
+    background-color: var(--h2-color);
+}
+
+                                            /*forTest*/
+                                                /* body{
+                                                    background-color: #888;
+                                                }
+                                                .grand{
+                                                    background-color: #003;
+                                                }
+                                                nav.mini{
+                                                    background-color:#009;
+                                                }
+                                                header.mini{
+                                                    background-color:#998200;
+                                                }
+                                                section.mini{
+                                                    background-color:#d400ff;
+                                                }
+                                                footer.mini{
+                                                    background-color:#00ffff;
+                                                }
+                                                article{
+                                                    background-color:#090;
+                                                }
+                                                h2,h3,h4,h5,h6{
+                                                    background-color:#300;
+                                                }
+                                                p{
+                                                    background-color:#900;
+                                                }
+                                                img{
+                                                    background-color:#f87cc4;
+                                                }  */
+                                            /*forTest*/
+
+                /*=== === === === === === === === === === endRules === === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startNav === === === === === === === === === === === ====*/
+
+body nav.grand{
+    color: var(--Pure-white-color);     /*clear if still white*/
+    background-color:var(--odoo-color);
+    /* padding:20px; */
+}
+body nav.grand .container article.frst{
+    flex-basis: 15%;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    margin-right: 30px;
+}
+body nav.grand .container article.frst a{
+    margin-right:40px;
+}
+body nav.grand .container article.snd{
+    flex-basis: 50%;
+    align-items: center;
+}
+body nav.grand .container article.snd ul{
+    list-style: none;
+    padding: 10px;
+}
+.container.grand{
+    color:red;
+}
+body nav.grand .container article.snd ul li:not(:last-of-type){
+    padding-right:15px;
+}
+body nav.grand .container article.thrd{
+    flex-basis: 25%;
+    align-items: center;
+}
+.square{
+    width: 28%;
+    height: 28%;
+    background-color: var(--Pure-white-color);
+}
+.big-square{
+    justify-content: space-between;
+    width: 20px;
+    height: 16px;
+}
+                /*=== === === === === === === === === === endNav === === === === === === === === === === === === ==*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startHeader === === === === === === === === === === === =*/
+
+body header.grand{
+    background-color:var(--Pure-white-color);     /*clear if still white*/
+
+}
+body header.grand .container .sub-container article{
+    flex-basis: 50%;
+}
+body header.grand .container .sub-container article.frst .primery-links{
+    font-size: var(--h3-font);
+}
+                /*=== === === === === === === === === === endHeader === === === === === === === === === === === ===*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox1 === === === === === === === === === === === ===*/
+
+
+
+                /*=== === === === === === === === === === endBox1 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox2 === === === === === === === === === === === ===*/
+
+
+
+                /*=== === === === === === === === === === endBox2 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox3 === === === === === === === === === === === ===*/
+
+
+
+                /*=== === === === === === === === === === endBox3 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox4 === === === === === === === === === === === ===*/
+
+
+
+                /*=== === === === === === === === === === endBox4 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startMedia === === === === === === === === === === === ==*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --XXS Portrait phones and smaller === === === === === === === === ===*/
+
+@media (max-width: 479px){
+    body > * > .container{
+        flex-basis: calc(var(--xxs)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --XS Landscape phones and portrait tablets === === === === === === ==*/
+
+@media (min-width: 480px) and (max-width: 767px){
+    article{
+        flex-basis: 80%;
+    }
+    body > * > .container{
+        width: calc(var(--xs)*11.5);
+    }
+    body nav .container .parent .sub-container{
+        flex-wrap: wrap;
+    }
+    body nav .container .parent .sub-container header h3{
+        justify-content: center;
+    }
+    body nav .container .parent .sub-container section ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    body .box4 .container .parent .sub-container section.mini article{
+        flex-basis: 60%;
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --S Portrait tablets and small desktops === === === === === === === =*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    article{
+        flex-basis: 50%;
+    }
+    body > * > .container{
+        width: calc(var(--s)*11.5);
+    }
+    body .box4 .container .parent .sub-container section.mini article{
+        flex-basis: 35%;
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --M Landscape tablets and medium desktops === === === === === === == */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body > * > .container{
+        width: calc(var(--m)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --L Large desktops and laptops === === === === === === === === === ==*/
+
+@media (min-width: 1200px) {
+    body > * > .container{
+        width: 98%;
+    }
+}
+
+                /*=== === === === === === === === === === endMedia === === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
