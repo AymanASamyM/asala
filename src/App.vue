@@ -1,21 +1,27 @@
 <template>
-  <div class="">
-    <navbar></navbar>
-    <!-- startBoard -->
-    <section class="board">
-        <div class="container">
-          <div class="parent">
-            <user class="user" v-for="item in items"></user>
-          </div>
+  <!-- startBoard -->
+  <section class="board">
+      <div class="container">
+        <div class="parent">
+          <user class="user"></user>
+          <user class="user"></user>
+          <user class="user"></user>
+          <user class="user"></user>
+          <user class="user"></user>
+          <user class="user"></user>
+          <user class="user"></user>
+          <drop-list></drop-list>
         </div>
+          </div>
     </section>
     <!-- endBoard -->
-  </div>
+
 </template>
 
 <script>
 import user from './components/user.vue';
 import navbar from './components/navbar.vue';
+import dropList from './components/drop-list.vue';
 
 export default {
   data(){
@@ -26,6 +32,8 @@ export default {
   components: {
     'user': user,
     'navbar' : navbar,
+    'drop-list': dropList
+
   }
 
 }
