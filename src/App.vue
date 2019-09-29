@@ -1,27 +1,31 @@
 <template>
-  <!-- startBoard -->
-  <section class="board">
-      <div class="container">
-        <div class="parent">
-          <user class="user"></user>
-          <user class="user"></user>
-          <user class="user"></user>
-          <user class="user"></user>
-          <user class="user"></user>
-          <user class="user"></user>
-          <user class="user"></user>
+  <div class="">
+    <navbar></navbar>
+    <!-- startBoard -->
+    <section class="board">
+        <div class="container">
+          <div class="parent">
+            <user class="user" v-for="item in items"></user>
+          </div>
         </div>
-      </div>
-  </section>
-  <!-- endBoard -->
+    </section>
+    <!-- endBoard -->
+  </div>
 </template>
 
 <script>
 import user from './components/user.vue';
-export default {
+import navbar from './components/navbar.vue';
 
+export default {
+  data(){
+    return{
+      items:[1,2,3,4,5,6]
+    }
+  },
   components: {
-    'user': user
+    'user': user,
+    'navbar' : navbar,
   }
 
 }
