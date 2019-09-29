@@ -10,6 +10,7 @@
           <user class="user"></user>
           <user class="user"></user>
           <user class="user"></user>
+          <drop-list></drop-list>
         </div>
       </div>
   </section>
@@ -18,10 +19,12 @@
 
 <script>
 import user from './components/user.vue';
+import dropList from './components/drop-list.vue';
 export default {
 
   components: {
-    'user': user
+    'user': user,
+    'drop-list': dropList
   }
 
 }

@@ -16,28 +16,30 @@
                 width:80%;
                 margin: auto;
             }
+            div.box{
+                display: flex;
+                flex-wrap: wrap;
+                width:180px;
+            }
             div.title{
                 color:var(--body-color);
+                border: 1px solid #000;
             }
             div.title:hover{
                 border:1px solid var(--gray-color);
-                height:50px;
-            }
-            div.title:hover ul{
-                top:55px;
-                z-index: 1;
             }
             ul,li,a{
                 display: flex;
             }
             ul{
-                border:1px solid var(--gray-color);
+                border:1px solid var(--light-gray-color);
                 flex-wrap: wrap;
-                position:relative;
-                top:-100px;
-                z-index: -1;
+                /* flex-basis: 100%; */
+                padding:10px;
+                display: none;
             }
             li{
+                /* justify-content: center; */
                 flex-basis: 100%;
             }
             a{
@@ -53,7 +55,7 @@
     <body>
         <article>
             <!-- startDropList -->
-            <!-- <div class="box"> -->
+            <div class="box">
                 <div class="title">
                     list title
                 </div>
@@ -94,10 +96,10 @@
                         </a>
                     </li>
                 </ul>
-            <!-- </div> -->
+            </div>
             <!-- endDropList -->
             <!-- startDropList -->
-            <!-- <div class="box"> -->
+            <div class="box">
                     <div class="title">
                         list title
                     </div>
@@ -138,10 +140,10 @@
                             </a>
                         </li>
                     </ul>
-                <!-- </div> -->
+                </div>
                 <!-- endDropList -->
             <!-- startDropList -->
-            <!-- <div class="box"> -->
+            <div class="box">
                     <div class="title">
                         list title
                     </div>
@@ -182,7 +184,7 @@
                             </a>
                         </li>
                     </ul>
-                <!-- </div> -->
+                </div>
                 <!-- endDropList -->
         </article>
     </body>
