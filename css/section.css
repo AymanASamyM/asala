@@ -1,0 +1,178 @@
+
+        /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+        /*=== === === === === === === === === === startClintInfo === === === === === === === === === === ==*/
+        section.grand .container .parent{
+            background-color:var(--header-color);
+
+            /* display: flex; */
+            margin: auto;
+            width:80%;
+        }
+        /*----------------------------- header --------------------------------------- */
+
+
+
+        section.grand .container .parent header.mini{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            border-bottom: 1px solid var(--place-holder-color);
+        }
+        section.grand .container .parent header.mini article{
+            border-left: 1px solid var(--place-holder-color);
+            display: flex;
+            /* width:12%; */
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        section.grand .container .parent header.mini article img{
+            width:24%;
+            height:28px;
+            background-color:var(--light-odoo-color);
+            display: flex;
+        }
+        section.grand .container .parent header.mini article div.ryt{
+            width:70%;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: var(--action-font);
+        }
+        section.grand .container .parent header.mini article div.ryt h3{
+            flex-basis: 100%;
+            color:var(--light-odoo-color);
+        }
+        section.grand .container .parent header.mini article div.ryt h4{
+            color:var(--disabled-color);
+        }
+
+
+
+        /*----------------------------- section --------------------------------------- */
+
+
+        section.grand{
+            padding:10px 0;
+        }
+        section.grand .container .parent section.mini{
+            padding: 20px 0;
+        }
+        section.grand .container .parent section.mini .sub-container{
+            width: 94%;
+            margin:auto;
+        }
+        section.grand .container .parent section.mini .sub-container article.up{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        section.grand .container .parent section.mini .sub-container article.up > *{
+            display: flex;
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.lft{
+            flex-basis: 60%;
+            flex-wrap: wrap;
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.lft > *{
+            display: flex;
+            width:95%;
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.lft div.up{
+            align-items: center;
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.lft div.down input.name{
+            width: 100%;
+            border: none;
+            background-color:transparent;
+            padding:20px;
+            border-bottom: 2px solid var(--under-line-color);
+            font-size: 30px;
+        }
+        section.grand.view .container .parent section.mini .sub-container article.up div.lft div.down input.name{
+            border-bottom: none;
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.lft div.down input.name::placeholder{
+            color: var(--place-holder-color);
+        }
+        section.grand.view .container .parent section.mini .sub-container article.up div.lft div.down input.name:disabled{
+            color: var(--text-color);
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.ryt input.image{
+            width: 70px;
+            height:70px;
+        }
+        section.grand .container .parent section.mini .sub-container article.up div.ryt{
+            flex-basis: 40%;
+            justify-content: flex-end;
+        }
+        section.grand .container .parent section.mini .sub-container article.down{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        section.grand.view .container .parent section.mini .sub-container article.down input{
+            border-bottom: none;
+        }
+        section.grand .container .parent section.mini .sub-container article.down input::placeholder{
+            color: var(--place-holder-color);
+        }
+        section.grand.view .container .parent section.mini .sub-container article.down input:disabled{
+            color: var(--light-action-color);
+        }
+
+
+
+        /*----------------------------- footer --------------------------------------- */
+
+
+
+        section.grand .container .parent footer.mini{
+            padding: 20px 0;
+
+        }
+        section.grand .container .parent footer.mini .sub-container{
+            width: 94%;
+            margin:auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        section.grand .container .parent footer.mini .sub-container article{
+            width:30%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        section.grand .container .parent footer.mini .sub-container article h3{
+            color:var(--disabled-color);
+            border-bottom:2px solid var(--under-line-color);
+            /* width:100%; */
+            margin-right: 60%;
+            padding:5px;
+        }
+        section.grand .container .parent footer.mini .sub-container article p{
+            display: inline-block;
+            /* width:70px; */
+            margin-left:10px;
+        }
+        section.grand.view .container .parent footer.mini .sub-container article input.text{
+            border-bottom: none;
+        }
+        section.grand .container .parent footer.mini .sub-container article input.text::placeholder{
+            color: var(--place-holder-color);
+        }
+        section.grand.view .container .parent footer.mini .sub-container article input.text:disabled{
+            color: var(--light-action-color);
+        }
+        section.grand .container .parent footer.mini .sub-container article .check-box{
+            width:50%;
+            padding: 10px;
+        }
+        section.grand.view .container .parent footer.mini .sub-container article .check-box{
+            color:var(--light-odoo-color);
+            font-weight: bold;
+        }
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+/*=== === === === === === === === === === endClintInfo === === === === === === === === === === === */

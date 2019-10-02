@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            article{
+                /* background-color:#e9a2a2; */
+                
+                display: flex;
+                width:80%;
+                margin: auto;
+            }
+
+
+            ul,li,a,img,div{
+                display: flex;
+            }
+            ul{
+                flex-wrap: wrap;
+                flex-basis: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+            li{
+                width: 24%;
+            }
+            a{
+                /* background-color: #b19dd1; */
+                text-decoration: none;
+                flex-basis: 100%;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                border: 1px solid #c2c4c5;
+            }
+            img{
+                width: 30%;
+                height: 100px;
+                background: #dad8dd url('../images/001.svg') no-repeat 0px/100%;
+            }
+            div{
+                width: 180px;
+                padding: 10px;
+                flex-wrap: wrap;
+                overflow:auto;
+            }
+            h3{
+                color:var(--headings-color);
+                font-weight:100;
+                font-size: var(--action-font);
+                flex-basis: 100%;
+            }
+            p{
+                color:var(--muted-color);
+            }
+        </style>
+        <link rel="stylesheet" href="css/variables.css">
+    </head>
+    <body>
+        <article>
+            <!-- startList -->
+            <!-- <ul> -->
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                        <div>
+                            <h3>name</h3>
+                            <p>emailaddress@domain.com</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../images/cover.jpg" alt="avatar">
+                        <div>
+                            <h3>name</h3>
+                            <p>emailaddress@domain.com</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../images/cover.jpg" alt="avatar">
+                        <div>
+                            <h3>name</h3>
+                            <p>emailaddress@domain.com</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../images/cover.jpg" alt="avatar">
+                        <div>
+                            <h3>name</h3>
+                            <p>emailaddress@domain.com</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../images/cover.jpg" alt="avatar">
+                        <div>
+                            <h3>name</h3>
+                            <p>emailaddress@domain.comemailaddress@domain.com</p>
+                        </div>
+                    </a>
+                </li>
+                
+            <!-- </ul> -->
+            <!-- endList -->
+        </article>
+    </body>
+</html>

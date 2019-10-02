@@ -1,0 +1,65 @@
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+/*=== === === === === === === === === === startRules === === === === === === === === === === ==*/
+
+/*==================================================================*/
+                            /* startImport*/
+@import url('frameworks.css');
+@import url('variables.css');
+
+@import url('header.css');
+
+@import url('section.css');
+                            /* endImport*/
+/*==================================================================*/
+
+/*==================================================================*/
+                            /* startFonts */
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat/Montserrat.eot") format("embedded-opentype")
+        ;
+    src:
+        url("../fonts/Montserrat/Montserrat.woff2") format("woff2"),
+        url("../fonts/Montserrat/Montserrat.woff") format("woff"),
+        url("../fonts/Montserrat/Montserrat.ttf") format("truetype"),
+        url("../fonts/Montserrat/Montserrat.otf") format("opentype")
+        url("../fonts/Montserrat/Montserrat.svg#Montserrat") format("svg")
+        ;
+}
+/* <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> */
+
+.ar{
+    font-family: 'Markazi Text', serif;
+    
+    direction:rtl;
+} /*for arabic*/
+.en{
+    font-family: Montserrat, sans-serif;    /*for heading*/
+    /*Open Sans*/       /*for paragraghs*/
+}
+
+                            /* endFonts */
+/*==================================================================*/
+
+*{
+    padding: 0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.body{
+    width:100%;
+    min-height: 640px;
+    background-color:var(--light-gray-color);
+    color:var(--text-color);
+}
+.container{
+    width:98%;
+    margin:auto;
+}
+
+/*=== === === === === === === === === === endRules === === === === === === === === === === === */
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/

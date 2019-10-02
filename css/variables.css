@@ -1,22 +1,33 @@
 :root{
-    /* color:     */
-        --light-odoo-color: #875A7B;
-        --dark-odoo-color: #62495B;
-        --gray-color: #8F8F8F;
-        --action-color: #00A09D;      /*Primary/Action*/
-    
-    /* background: */
-        --light-gray-color: #F9F9F9;
-        --pure-white-color: #FFFFFF;
+    /* odoo colors */
+    --pure-white-color: #FFFFFF;
+    --light-gray-color: #F9F9F9;
+    --middle-gray-color:#d4d4d4;
+    --gray-color: #8F8F8F;
+    --dark-gray-color: #6B6D70;
+    --burned-gray-color: #282F33;
+    --dark-burned-gray-color: #21272B;
 
-    /* typo: */
-        --headings-color: #21272B;
-        --body-color: #282F33;
-        --muted-color: #6B6D70;
-        
+
+    --light-action-color: #00A09D;
+    --dark-action-color:#006866;
+    --light-odoo-color: #875A7B;
+    --dark-odoo-color: #62495B;
+        /* background: */
+
+        --body-color:var(--light-gray-color);
+        --header-color:var(--pure-white-color);
+        --border-color:var(--gray-color);
+        --place-holder-color:var(--middle-gray-color);
+        --button-color:var(--light-action-color);
+        --button-hover-color:var(--dark-action-color);
+        --disabled-color:var(--dark-gray-color);
+        --under-line-color:var(--burned-gray-color);
+        --text-color:var(--dark-burned-gray-color);
+
         --nav-font:22px;
         --tree-font:18px;
-        --action-font:16px;
+        --action-font:13px;
         --text-font:13px;
         
         --xxs:calc(320px/12);

@@ -1,10 +1,10 @@
 <template>
     <!-- startDropList -->
-    <div class="box">
+    <div class="box"  v-on:click="displayItems = ! displayItems">
         <div class="title">
             list title
         </div>
-        <ul>
+        <ul v-if="displayItems">
             <li>
                 <a href="">
                     item 1
@@ -31,9 +31,38 @@
 </template>
 
 <script>
+import {bus} from '../main'
+
 export default {
-  
+  data(){
+    return{
+      displayItems : true,
+    }
+  },
+  methods:{
+    toggleDisplayItems(){
+      var x = document.getElementById("listItems");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      this.displayItems = true;
+    },
+},
+beforeCreate(){
+  bus.$on('closeDisplay',(data)=>{
+    this.displayItems =false;
+    console.log('disabled');
+  })
 }
+}
+
+document.onclick=function(){
+  // internal.$emit('clicked');
+  bus.$emit('closeDisplay','temp');
+}
+
 </script>
 
 <style scoped>
@@ -56,7 +85,7 @@ ul{
     border:1px solid var(--light-gray-color);
     flex-wrap: wrap;
     padding:10px;
-    display: none;
+    /* display: none; */
 }
 li{
     /* justify-content: center; */

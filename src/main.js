@@ -2,17 +2,19 @@ import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
 import './registerServiceWorker'
+import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
 import Routes from './routes'
 
+Vue.use(VueResource);
 Vue.use(VueRouter);
-
-// Vue.config.productionTip = false
 
 const router = new VueRouter({
   routes:Routes,
-  mode:'history'
+  mode: 'history'
 });
+
+Vue.config.productionTip = false
 
 new Vue({
   store,

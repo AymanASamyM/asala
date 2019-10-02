@@ -4,16 +4,16 @@
       <article class="">
         <ul>
                   <li>
-                      <a href="">Board</a>
+                      <a href="/">Board</a>
                   </li>
                   <li>
-                      <a href="">Customers</a>
+                      <a href="/users">Users</a>
                   </li>
                   <li>
-                      <a href="">Clients</a>
+                      <a href="/clients">Clients</a>
                   </li>
                   <li>
-                      <a href="">Units</a>
+                      <a href="/units">Units</a>
                   </li>
               </ul>
       </article>

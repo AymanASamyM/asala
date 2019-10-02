@@ -1,0 +1,345 @@
+<template lang="html">
+  <div class="bodyy">
+    <section class="grand">
+      <div class="container">
+        <div class="parent">
+          <header class="mini">
+            <article>
+              <img src="" alt="">
+              <div class="ryt">
+                <h3>2</h3>
+                <h3>Unit(s)</h3>
+              </div>
+            </article>
+            <article>
+              <img src="" alt="">
+              <div class="ryt">
+                <h3>3000</h3>
+                <h3>Total Income</h3>
+              </div>
+          </article>
+          <article>
+            <img src="" alt="">
+            <div class="ryt">
+              <h3>500</h3>
+              <h3>Total Fees</h3>
+            </div>
+          </article>
+          <article>
+            <img src="" alt="">
+            <div class="ryt">
+              <h3>5800</h3>
+              <h3>Total Money</h3>
+            </div>
+          </article>
+        </header>
+        <section class="mini">
+          <div class="sub-container">
+            <article class="up">
+              <div class="lft">
+                <div class="up">
+                  <input type="radio" checked>
+                  &nbsp;
+                  <label>individual</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio">
+                  &nbsp;
+                  <label>company</label>
+                </div>
+                <div class="down">
+                  <input class="name" type="text" placeholder="NAME">
+                </div>
+              </div>
+              <div class="ryt">
+                <input class="image" type="image" alt="user image" width="70px" height="70px" src="url(../../images/001.svg)">
+              </div>
+            </article>
+            <article class="down">
+              <input type="text" placeholder="ID">
+              <input type="text" placeholder="Phone">
+              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Address">
+              <input type="text" placeholder="City">
+              <input type="text" placeholder="National ID">
+              <input type="text" placeholder="Notes">
+              <input type="text" placeholder="">
+              <input type="text" placeholder="">
+            </article>
+          </div>
+        </section>
+        <footer class="mini">
+          <div class="sub-container">
+            <article>
+              <h3>unit 1</h3>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rentable</p>
+              </div>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rented</p>
+              </div>
+              <input class="text" type="text" placeholder="Unit Type">
+              <input class="text" type="text" placeholder="Unit No.">
+              <input class="text" type="text" placeholder="Unit Building">
+              <input class="text" type="text" placeholder="Unit Project">
+              <input class="text" type="text" placeholder="Total Income">
+              <input class="text" type="text" placeholder="Total Fees">
+              <input class="text" type="text" placeholder="Total Money">
+            </article>
+            <article>
+              <h3>unit 1</h3>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rentable</p>
+              </div>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rented</p>
+              </div>
+              <input class="text" type="text" placeholder="Unit Type">
+              <input class="text" type="text" placeholder="Unit No.">
+              <input class="text" type="text" placeholder="Unit Building">
+              <input class="text" type="text" placeholder="Unit Project">
+              <input class="text" type="text" placeholder="Total Income">
+              <input class="text" type="text" placeholder="Total Fees">
+              <input class="text" type="text" placeholder="Total Money">
+            </article>
+            <article>
+              <h3>unit 1</h3>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rentable</p>
+              </div>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rented</p>
+              </div>
+              <input class="text" type="text" placeholder="Unit Type">
+              <input class="text" type="text" placeholder="Unit No.">
+              <input class="text" type="text" placeholder="Unit Building">
+              <input class="text" type="text" placeholder="Unit Project">
+              <input class="text" type="text" placeholder="Total Income">
+              <input class="text" type="text" placeholder="Total Fees">
+              <input class="text" type="text" placeholder="Total Money">
+            </article>
+            <article>
+              <h3>unit 1</h3>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rentable</p>
+              </div>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rented</p>
+              </div>
+              <input class="text" type="text" placeholder="Unit Type">
+              <input class="text" type="text" placeholder="Unit No.">
+              <input class="text" type="text" placeholder="Unit Building">
+              <input class="text" type="text" placeholder="Unit Project">
+              <input class="text" type="text" placeholder="Total Income">
+              <input class="text" type="text" placeholder="Total Fees">
+              <input class="text" type="text" placeholder="Total Money">
+            </article>
+            <article>
+              <h3>unit 1</h3>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rentable</p>
+              </div>
+              <div class="check-box">
+                  <input class="check" type="checkbox">
+                  <p>Rented</p>
+              </div>
+              <input class="text" type="text" placeholder="Unit Type">
+              <input class="text" type="text" placeholder="Unit No.">
+              <input class="text" type="text" placeholder="Unit Building">
+              <input class="text" type="text" placeholder="Unit Project">
+              <input class="text" type="text" placeholder="Total Income">
+              <input class="text" type="text" placeholder="Total Fees">
+              <input class="text" type="text" placeholder="Total Money">
+            </article>
+          </div>
+        </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</template>
+
+<script>
+export default {
+  props:['userData']
+}
+</script>
+
+<style lang="css" scoped>
+
+section.grand{
+    background-color:var(--light-gray-color);
+
+}
+section.grand .container{
+    width:99%;
+    margin:auto;
+}
+section.grand .container .parent{
+    border: 1px solid var(--middle-gray-color);
+
+    /* display: flex; */
+    margin: auto;
+    width:80%;
+}
+section.grand .container .parent header.mini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+section.grand .container .parent header.mini{
+    border-bottom: 1px solid var(--middle-gray-color);
+}
+section.grand .container .parent header.mini article{
+    border-left: 1px solid var(--middle-gray-color);
+
+    display: flex;
+    width:12%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+section.grand .container .parent header.mini article img{
+    width:24%;
+    height:28px;
+    background-color:gray;
+    display: flex;
+}
+section.grand .container .parent header.mini article div.ryt{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.grand .container .parent header.mini article div.ryt h3{
+    flex-basis: 100%;
+}
+
+/*------------------------------------------------ */
+
+section.grand .container .parent section.mini{
+    padding: 20px 0;
+}
+section.grand .container .parent section.mini .sub-container{
+    width: 94%;
+    margin:auto;
+}
+section.grand .container .parent section.mini .sub-container article.up{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+section.grand .container .parent section.mini .sub-container article.up > *{
+    display: flex;
+}
+section.grand .container .parent section.mini .sub-container article.up div.lft{
+    flex-basis: 60%;
+    flex-wrap: wrap;
+}
+section.grand .container .parent section.mini .sub-container article.up div.lft > *{
+    display: flex;
+    width:95%;
+}
+section.grand .container .parent section.mini .sub-container article.up div.lft div.up{
+    align-items: center;
+}
+section.grand .container .parent section.mini .sub-container article.up div.lft div.down input.name{
+    width: 100%;
+    border: none;
+    background-color:transparent;
+    padding:20px;
+    border-bottom: 2px solid var(--body-color);
+    font-size: 30px;
+}
+section.grand .container .parent section.mini .sub-container article.up div.lft div.down input.name::placeholder{
+    color: var(--middle-gray-color);
+}
+section.grand .container .parent section.mini .sub-container article.up div.ryt input.image{
+    width: 70px;
+    height:70px;
+    /* border: none;
+    background-color:transparent;
+    padding:20px;
+    border-bottom: 2px solid var(--body-color);
+    font-size: 30px; */
+}
+section.grand .container .parent section.mini .sub-container article.up div.ryt{
+    flex-basis: 40%;
+    justify-content: flex-end;
+}
+section.grand .container .parent section.mini .sub-container article.down{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section.grand .container .parent section.mini .sub-container article.down input{
+    width: 32%;
+    border: none;
+    background-color:transparent;
+    padding: 2px;
+    border-bottom: 2px solid var(--middle-gray-color);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+section.grand .container .parent section.mini .sub-container article.down input::placeholder{
+    color: var(--middle-gray-color);
+}
+
+/*-------------------------------------------------------------------- */
+
+section.grand .container .parent footer.mini{
+    padding: 20px 0;
+
+}
+section.grand .container .parent footer.mini .sub-container{
+    width: 94%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section.grand .container .parent footer.mini .sub-container article{
+    width:30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+section.grand .container .parent footer.mini .sub-container article h3{
+    color:var(--body-color);
+    border-bottom:2px solid var(--middle-gray-color);
+    width:100%;
+    padding:5px;
+}
+section.grand .container .parent footer.mini .sub-container article p{
+    display: inline-block;
+    /* width:70px; */
+    margin-left:10px;
+}
+section.grand .container .parent footer.mini .sub-container article input.text{
+    width: 45%;
+    border: none;
+    background-color:transparent;
+    padding: 2px;
+    border-bottom: 2px solid var(--middle-gray-color);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+section.grand .container .parent footer.mini .sub-container article input.text::placeholder{
+    color: var(--middle-gray-color);
+}
+section.grand .container .parent footer.mini .sub-container article .check-box{
+    width:50%;
+    padding: 10px;
+}
+
+</style>

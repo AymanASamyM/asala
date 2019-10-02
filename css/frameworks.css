@@ -1,25 +1,216 @@
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+/*=== === === === === === === === === === startFrameWork === === === === === === === === === === ==*/
 
-.nav-font{
-    font-size: var(--nav-font);
-    font-family: Montserrat;
-    font-weight: 400;
-    line-height: 1.1;
+.thumbnail{
+    background-color:#FFF;
+    border:3px dashed var(--body-color);
+    padding: 3px;
 }
-.tree-font{
-    font-size: var(--tree-font);
-    font-family: Montserrat;
-    font-weight: 400;
-    line-height: 1.1;
+.over-lay{
+    /*start for parent of over-lay*/
+    
+/*
+    position: relative;
+    height: 500px;
+    
+*/
+    
+    /*end for parent of over-lay*/
+    
+    background-color: #14171aa0;
+    
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width:100%;
+    height:100%;
 }
-.action-font{
-    font-size: var(--action-font);
-    font-family: 'Open Sans';
-    font-weight: 400;
-    line-height: 1.42;
+.link{
+    color: var(--h2-color);
+    
 }
-.text-font{
+.box-decoration{
+    box-shadow: 0px 0px 150px 20px var(--h2-color);
+    
+}
+.flex-box{
+    
+    display: flex;
+}
+.full-width{
+    
+    flex-basis: 100%;
+}
+.wrap{
+    
+    flex-wrap: wrap;
+}
+.no-wrap{
+    
+    flex-wrap: nowrap;
+}
+.circle{
+    
+    border-radius:50%;
+}
+.capital{
+    text-transform: capitalize;
+    
+}
+.uppercase{
+    text-transform: uppercase;
+    
+}
+.lowercase{
+    text-transform: lowercase;
+    
+}
+.mrgn-btm{
+    margin-bottom: 10px;
+}
+.hr{
+    width: 80px;
+    height: 1px;
+    margin: 30px 0;
+    background-color: var(--h2-color);
+    border-color: transparent;
+}
+.btn{
+    color: var(--body-color);
+    background-color: var(--h2-color);
+
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+
+    font-weight: bold;
+}
+.arw{
+    color: var(--p-color);
+    background-color: var(--body-color);
+    box-shadow: 0 0 2px 0 var(--p-color);
+
+    border: none;
+    border-radius: 40px;
+    padding: 15px 20px;
+
+    font-weight: bold;
+}
+.arw:hover{
+    color: var(--body-color);
+    background-color: var(--h2-color);
+}
+.hyd{
+    visibility: hidden!important;
+
+}
+.rmv{ 
+    display: none!important;
+}
+.wtr-mrk{       /*water mark*/
+    color: #e6dada;
+    
+    position: absolute;
+    z-index: -1;
+    top:-100px;         /*Adjustable*/
+
+    font-size: 150px;
+}
+.relative{
+    position: relative;
+}
+.reset-a{
+    text-decoration: none;
+    display: flex;
+}
+.shadow-dark-action{
+    box-shadow: 0 0 3px 1px var(--dark-action-color);
+}
+.shadow-place-holder{
+    box-shadow: 0 0 3px 1px var(--place-holder-color);
+}
+.shadow-place-holder-in{
+    box-shadow: 0 0 3px 1px var(--place-holder-color) inset;
+}
+
+
+.border{
+    border: 1px solid var(--place-holder-color);
+    border-radius: 6px;
+}
+.padding10{
+    padding:10px;
+}
+
+/*=== === === === === startInputField === === === === === */
+[class^="field"]{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+[class^="field"] p{
     font-size: var(--text-font);
-    font-family: 'Open Sans';
-    font-weight: 400;
-    line-height: 1.42;
 }
+[class^="field"] input{
+    border: none;
+    background-color:transparent;
+    padding: 2px;
+    border-bottom: 2px solid var(--border-color);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.field1{
+    width: 100%;
+}
+.field1 p{
+    width:30%;
+}
+.field1 input{
+    width:65%;
+}
+
+.field2{
+    width: 45%;
+}
+.field3{
+    width: 32%;
+}
+.field2 p,
+.field3 p{
+    width:20%;
+}
+.field2 input,
+.field3 input{
+    width: 75%;
+}
+/*=== === === === === endInputField === === === === === */
+
+/*=== === === === === Start ProgressBar === === === === === */
+[class^="progress-"]{
+border: 1px solid var(--body-color);
+
+height: 40px;
+padding:1px;
+}
+[class^="progress-"] .prog-bar{
+background-color: var(--body-color);
+
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+[class^="progress-"] .prog-bar .percentage{
+color:var(--grand-color);
+
+text-align: start;
+font-size: calc(var(--p-font)*.7);
+}
+/*=== === === === === End ProgressBar === === === === === ==*/
+
+/*=== === === === === === === === === === endFrameWork === === === === === === === === === === === */
+
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
