@@ -2,7 +2,7 @@
   "clients" :[
       {
         "id" : 1,
-        "username" : "مهاب كحلة",
+        "username" : " كحلة",
         "numbOfUnits" : 3,
         "unitsID": [1,3,5],
         "income" : 13212,
