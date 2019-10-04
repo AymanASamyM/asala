@@ -1,31 +1,61 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "Post 1"
-    },
-    {
-      "id": 2,
-      "title": "Post 2"
-    },
-    {
-      "id": 3,
-      "title": "Post 3"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "clients" :[
+      {
+        "id" : 1,
+        "username" : "مهاب كحلة",
+        "numbOfUnits" : 3,
+        "unitsID": [1,3,5],
+        "income" : 13212,
+        "fees": 563,
+        "phone":"01210313503",
+        "notes": "رخم",
+        "email": "mohab@kahla.com",
+        "address": "في مكان ما",
+        "city": "الإسكندرية عشان خاطر يسرا",
+        "nationalID": 265686416851,
+        },
+      {
+        "id" : 2,
+        "username" : "أيمن سامي",
+        "numbOfUnits" : 1,
+        "income" : 864,
+        "fees": 54,
+        "phone: "01316106413",
+        "notes": "كئيب",
+        "unitsID": [1,2,5],
+        "email": "ayman@samy.com",
+        "address": "فوق الناس اللي تحتيهم",
+        "city": "مع مهاب في الإسكندرية",
+        "nationalID": 464156431465,
+        },
+      {
+        "id" : 3,
+        "username" : "عمو مصطفى",
+        "numbOfUnits" : 5,
+        "income" : 8974,
+        "fees": 316,
+        "phone: "0565168465",
+        "notes":"سيدنا وابن سيدنا",
+        "unitsID": [1,3,5,2,],
+        "email": "eng@mostafa.com",
+        "address": "زيزينية",
+        "city": "في المكان اللي حضرته عايزه",
+        "nationalID": 454165143146,
+        },
+      {
+        "id" : 5,
+        "username" : "مهند",
+        "numbOfUnits" : 2,
+        "income" : 13212,
+        "fees": 563,
+        "phone": "63165165635",
+        "notes": "هربان ومبيردش",
+        "unitsID": [4,5],
+        "email": "ayman@samy.com",
+        "address": "تحت الناس اللي فوقيهم",
+        "city": "بمزاجه",
+        "nationalID": 6531865413168,
+      }
+    ],
+  
 }
