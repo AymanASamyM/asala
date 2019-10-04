@@ -12,7 +12,7 @@
         "email": "mohab@kahla.com",
         "address": "في مكان ما",
         "city": "الإسكندرية عشان خاطر يسرا",
-        "nationalID": 265686416851,
+        "nationalID": 265686416851
         },
       {
         "id" : 2,
@@ -26,7 +26,7 @@
         "email": "ayman@samy.com",
         "address": "فوق الناس اللي تحتيهم",
         "city": "مع مهاب في الإسكندرية",
-        "nationalID": 464156431465,
+        "nationalID": 464156431465
         },
       {
         "id" : 3,
@@ -40,7 +40,7 @@
         "email": "eng@mostafa.com",
         "address": "زيزينية",
         "city": "في المكان اللي حضرته عايزه",
-        "nationalID": 454165143146,
+        "nationalID": 454165143146
         },
       {
         "id" : 5,
@@ -54,7 +54,7 @@
         "email": "ayman@samy.com",
         "address": "تحت الناس اللي فوقيهم",
         "city": "بمزاجه",
-        "nationalID": 6531865413168,
+        "nationalID": 6531865413168
       }
     ]
   
