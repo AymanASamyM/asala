@@ -31,9 +31,9 @@
         </div>
     </div>
 </header>
-<section id="clientInfoGrand" class="clint-info grand view">
+<section class="clint-info grand view">
     <div class="container">
-        <div class="parent border shadow-place-holder">
+        <div id="clientInfoGrand" class="parent border shadow-place-holder">
             <header class="mini rmv">
                 <article class="">
                     <img class="rmv" src="" alt="">

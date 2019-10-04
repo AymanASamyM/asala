@@ -117,18 +117,19 @@ data(){
 methods:{
   edit:function(){
     if(this.editable){
-      this.editable = false;
-      this.btn1="Edit";
-      /*fullName branch user password confirmPassword email userType notes*/
-      document.getElementById("notes").disabled = true;
-      document.getElementById("userInfoGrand").classList.add("view");
-      document.getElementById("password").classList.add("rmv");
-      document.getElementById("confirmPassword").classList.add("rmv");
-      document.getElementById("fullName").disabled = true;
-      document.getElementById("branch").disabled = true;
-      document.getElementById("user").disabled = true;
-      document.getElementById("email").disabled = true;
-      document.getElementById("userType").disabled = true;
+      // this.editable = false;
+      // this.btn1="Edit";
+      // document.getElementById("notes").disabled = true;
+      // document.getElementById("userInfoGrand").classList.add("view");
+      // document.getElementById("password").classList.add("rmv");
+      // document.getElementById("confirmPassword").classList.add("rmv");
+      // document.getElementById("fullName").disabled = true;
+      // document.getElementById("branch").disabled = true;
+      // document.getElementById("user").disabled = true;
+      // document.getElementById("email").disabled = true;
+      // document.getElementById("userType").disabled = true;
+      //
+          window.location.href = '/users'
     }
     else{
       this.editable = true;
@@ -146,10 +147,15 @@ methods:{
   }
 },
 created(){
-  this.$http.get('http://jsonplaceholder.typicode.com/users/'+this.id).then(function(data){
-    console.log(data);
-    this.userData=data.body;
-  })
+    this.userData=
+      {
+        id : 1,
+        username : "عمو مصطفى :)",
+        name : "الباشمهندس مصطفى",
+        email : "eng.mostafa@samy.com",
+        branch: "الإسكندرية",
+        type: "المدير"
+      }
 },
 }
 </script>

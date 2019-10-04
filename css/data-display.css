@@ -1,0 +1,51 @@
+.data-display .container .sub-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+}
+.data-display .container .sub-container a,
+.data-display .container .sub-container a img,
+.data-display .container .sub-container a > div{
+    display: flex;
+}
+.data-display .container .sub-container a{
+    color: var(--text-color);
+    background-color:var(--pure-white-color);
+    width: 30%;
+    margin:0 .5% 10px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.data-display .container .sub-container a img{
+    width: 30%;
+    height: 100px;
+    margin: 10px 0;
+
+}
+.data-display .container .sub-container a > div{
+    flex-basis: 70%;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.data-display .container .sub-container a > div:hover{
+    display: block;
+    width:200px;
+}
+
+.data-display .container .sub-container a > div h3{
+    color:var(--text-color);
+    font-weight:100;
+    /* font-size: var(--action-font); */
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    direction:rtl;
+}
+.data-display .container .sub-container a > div p{
+    color:var(--muted-color);
+    width: 100%;
+    direction:rtl;
+}
+.data-display .container .sub-container a > div:hover p{
+    word-wrap: break-word;
+}

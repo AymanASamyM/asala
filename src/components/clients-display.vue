@@ -1,58 +1,65 @@
 <template>
-  <div class="">
+  <div class="body en">
     <header class="grand">
-      <div class="container">
-        <div class="parent">
-          <article class="tree">
-                <!-- startList -->
-            <ul>
-              <li>
-                <a href="/clients">Clients</a><span>/</span>
-              </li>
-            </ul>&nbsp;
-            <span>{{userData.name}}</span>
-                <!-- endList -->
-          </article>
-          <article class="search">
-            <input type="text" placeholder="search..." v-model="search">
-          </article>
-          <article class="buttons">
-                <!-- startList -->
-            <ul>
-              <li>
-                <a class="defult" href="new" >New</a>
-              </li>
-            </ul>
-                <!-- endList -->
-          </article>
-          <article class="filters rmv">
-            filters
-          </article>
-        </div>
-      </div>
-    </header>        <!-- <input type="text" name="" v-model="search"> -->
-        <!-- <input type="text" name="" v-model="search"> -->
-    <base href="/clients/">
-    <!-- startList -->
-    <a class="allusers" v-for="usr in filteredData" :href="usr.id" > <!--mohab added class allusers to differentiate between this anchor and the header anchors -->
-        <img src="" alt="">
-        <div>
-            <h3>{{usr.username}}</h3>
-            <p>{{usr.email}}</p>
-        </div>
-    </a>
+        <div class="container">
+            <div class="parent">
+                <article class="tree">
+                    <!-- startList -->
+                    <ul>
+                      <li>
+                        <a href="/users">Clients</a><span>/</span>
+                      </li>
+                    </ul>&nbsp;
+                    <span>{{userData.name}}</span>
+                    <!-- endList -->
+                </article>
+                <article class="search">
+                  <input type="text" placeholder="search..." v-model="search">
+                </article>
+                <article class="buttons">
+                  <base href="/clients/">
 
-    <!-- endList -->
-  </div>
+                    <!-- startList -->
+
+                    <ul>
+                      <li>
+                        <a class="defult" href="new" >New</a>
+                      </li>
+                    </ul>
+                    <!-- endList -->
+                </article>
+                <article class="filters">
+                    <p></p>
+                    <div>
+                      <input type="radio" name="filters" value="username" checked>username
+                      <input type="radio" name="filters" value="email">email
+                    </div>
+                </article>
+            </div>
+        </div>
+    </header>
+    <section class="data-display grand">
+        <div class="container">
+            <div class="sub-container">
+              <a class="border" v-for="usr in filteredData" :href="usr.id" > <!--mohab added class allusers to differentiate between this anchor and the header anchors -->
+                  <div>
+                      <h3>الاسم:  {{usr.username}}</h3>
+                      <p>عدد الوحدات:   {{usr.numbOfUnits}}</p>
+                      <p>الدخل:   {{usr.income}}</p>
+                      <p>مصاريف:  {{usr.fees}}</p>
+                      <p>إجمالي النقدية:  {{usr.money}}</p>
+                      <p>رقم العميل:   {{usr.id}}</p>
+                      <p>ملاحظات:    {{usr.notes}}</p>
+                  </div>
+              </a>
+            </div>
+        </div>
+    </section>
+</div>
 </template>
 
 <script>
-import appHeader from './header.vue';
 export default {
-  components:{
-    'appHeader':appHeader,
-  },
-  props:[],
   data(){
     return{
         link:"",
@@ -67,61 +74,84 @@ export default {
         btn2:"",
         search:"",
         userData:[],
+        beginning: true,
     }
   },
   computed:{
     filteredData:function(){
-      return this.userData.filter((usr)=>{
-        return usr.username.toLowerCase().match(this.search);
-      })
+      var radios = document.getElementsByName('filters');
+      for (var i = 0, length = radios.length; i < length; i++)
+      {
+       if (radios[i].checked )
+       {
+         if (radios[i].value === 'username')
+       {
+         return this.userData.filter((usr)=>{
+           return usr.username.match(this.search);
+         })
+       }}
+       else {
+         return this.userData.filter((usr)=>{
+           return usr.email.toLowerCase().match(this.search);
+         })
+       }
+      }
+      if(this.beginning){
+        this.beginning =false;
+        return this.userData.filter((usr)=>{
+          return usr.username.match(this.search);
+        })
+            }
     }
   },
   created(){
-    this.$http.get('http://jsonplaceholder.typicode.com/users/').then(function(data){
-      console.log(data);
-      this.userData=data.body;
-    })
+    // this.$http.get('http://jsonplaceholder.typicode.com/users/').then(function(data){
+    //   console.log(data);
+    //   this.userData=data.body;
+    // })
+
+    this.userData=[
+      {
+        id : 1,
+        username : "مهاب كحلة",
+        numbOfUnits : 3,
+        income : 13212,
+        fees: 563,
+        money:86451,
+        notes: "رخم"
+        },
+      {
+        id : 2,
+        username : "عميل 2",
+        numbOfUnits : 1,
+        income : 864,
+        fees: 54,
+        money:89431,
+        notes: ""
+        },
+      {
+        id : 3,
+        username : "عميل 3",
+        numbOfUnits : 5,
+        income : 8974,
+        fees: 316,
+        money:64631,
+        notes:""
+        },
+      {
+        id : 5,
+        username : "عميل5",
+        numbOfUnits : 2,
+        income : 13212,
+        fees: 563,
+        money:86451,
+        notes: "يتأخر في السداد"
+      }
+    ]
   },
 }
 </script>
 
 <style scoped>
-a,img,div,ul,li{
-    display: flex;
-}
-a.allusers{ /* mohab added ".allusers" */
-    /* background-color: #b19dd1; */
-    border: 1px solid #c2c4c5;
-
-    width: 24%;
-    justify-content: space-between;
-    margin-bottom: 10px;
-
-    text-decoration: none;
-}
-img{
-    background: #dad8dd url('../../images/001.svg') no-repeat 0px/100%;
-
-    width: 30%;
-    height: 100px;
-
-}
-div{
-    flex-wrap: wrap;
-    padding: 10px;
-
-    overflow:auto;
-}
-h3{
-    color:var(--headings-color);
-
-    flex-basis: 100%;
-
-    font-weight:100;
-    font-size: var(--action-font);
-}
-p{
-    color:var(--muted-color);
-}
 
 </style>

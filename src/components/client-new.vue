@@ -1,166 +1,166 @@
 <template lang="html">
-  <div class="bodyy">
-    <section class="grand">
-      <div class="container">
+  <div class="body en">
+    <header class="grand">
+    <div class="container">
         <div class="parent">
-          <header class="mini">
-            <article>
-              <img src="" alt="">
-              <div class="ryt">
-                <h3>2</h3>
-                <h3>Unit(s)</h3>
-              </div>
+            <article class="tree">
+                <!-- startList -->
+                <ul>
+                    <li>
+                        <a href="/clients">Clients</a><span>/</span>
+                    </li>
+                </ul>&nbsp;
+                <span>{{userData.name}}</span>
+                <!-- endList -->
             </article>
-            <article>
-              <img src="" alt="">
-              <div class="ryt">
-                <h3>3000</h3>
-                <h3>Total Income</h3>
-              </div>
-          </article>
-          <article>
-            <img src="" alt="">
-            <div class="ryt">
-              <h3>500</h3>
-              <h3>Total Fees</h3>
-            </div>
-          </article>
-          <article>
-            <img src="" alt="">
-            <div class="ryt">
-              <h3>5800</h3>
-              <h3>Total Money</h3>
-            </div>
-          </article>
-        </header>
-        <section class="mini">
-          <div class="sub-container">
-            <article class="up">
-              <div class="lft">
-                <div class="up">
-                  <input type="radio" checked>
-                  &nbsp;
-                  <label>individual</label>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="radio">
-                  &nbsp;
-                  <label>company</label>
+            <article class="search hyd">
+                    <input type="text" placeholder="search...">
+            </article>
+            <article class="buttons">
+                <!-- startList -->
+                <ul>
+                    <li>
+                        <a class="defult" v-on:click="edit">{{btn1}}</a>
+                    </li>
+                </ul>
+                <!-- endList -->
+            </article>
+            <article class="filters rmv">
+                filters
+            </article>
+        </div>
+    </div>
+</header>
+<section class="clint-info grand">
+    <div class="container">
+        <div id="clientInfoGrand" class="parent border shadow-place-holder">
+            <header class="mini rmv">
+                <article class="">
+                    <img class="rmv" src="" alt="">
+                    <div class="ryt">
+                        <h3>2</h3>
+                        <h4>Unit(s)</h4>
+                    </div>
+                </article>
+                <article>
+                    <img class="rmv" src="" alt="">
+                    <div class="ryt">
+                        <h3>2</h3>
+                        <h4>Unit(s)</h4>
+                    </div>
+                </article>
+                <article>
+                    <img class="rmv" src="" alt="">
+                    <div class="ryt">
+                        <h3>2</h3>
+                        <h4>Unit(s)Unit(s)</h4>
+                    </div>
+                </article>
+                <article>
+                    <img class="rmv" src="" alt="">
+                    <div class="ryt">
+                        <h3>2</h3>
+                        <h4>Unit(s)</h4>
+                    </div>
+                </article>
+            </header>
+            <section class="mini">
+                <div class="sub-container shadow-place-holder border padding10">
+                    <article class="up">
+                        <div class="lft">
+                            <div class="up rmv">
+                                <input type="radio" checked>
+                                &nbsp;
+                                <label>individual</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio">
+                                &nbsp;
+                                <label>company</label>
+                            </div>
+                            <div class="down">
+                                <input id="name" class="name" type="text" placeholder="NAME" :value="userData.name" disabled>
+                            </div>
+                        </div>
+                        <div class="ryt rmv">
+                            <input class="image" type="image" alt="user image" width="70px" height="70px" src="url(../../images/001.svg)">
+                        </div>
+                    </article>
+                    <article class="down">
+                        <div class="field3">
+                            <p>ID:</p>
+                            <input id="id" type="text" placeholder="ID" :value="userData.id" disabled>
+                        </div>
+                        <div class="field3">
+                            <p>Phone:</p>
+                            <input id="phone" type="text" placeholder="Phone" :value="userData.phone" disabled>
+                        </div>
+                        <div class="field3">
+                            <p>Email:</p>
+                            <input id="email" type="text" placeholder="Email" :value="userData.email" disabled>
+                        </div>
+                        <div class="field3">
+                            <p>Address:</p>
+                            <input id="address" type="text" placeholder="Address" :value="userData.address" disabled>
+                        </div>
+                        <div class="field3">
+                            <p>City:</p>
+                            <input id="city" type="text" placeholder="City" :value="userData.city" disabled>
+                        </div>
+                        <div class="field3">
+                            <p>National ID:</p>
+                            <input id="nationalID" type="text" placeholder="National ID" :value="userData.nationalID" disabled>
+                        </div>
+                        <div class="field3">
+                            <p>Notes:</p>
+                            <input id="notes" type="text" placeholder="Notes" :value="userData.notes" disabled>
+                        </div>
+                    </article>
                 </div>
-                <div class="down">
-                  <input class="name" type="text" placeholder="NAME">
+            </section>
+            <footer class="mini">
+                <div class="sub-container">
+                    <article class="shadow-place-holder border padding10" v-for="unit in userData.units">
+                        <h3>{{unit.id}}</h3>
+                        <div class="check-box">
+                            <input disabled checked class="check" type="checkbox">
+                            <p class="">Rentable</p>
+                        </div>
+                        <div class="check-box">
+                            <input class="check rmv" type="checkbox">
+                            <p>Rented</p>
+                        </div>
+                        <div class="field1">
+                            <p>Unit Type:</p>
+                            <input class="text" type="text" placeholder="Unit Type" :value="unit.type" disabled>
+                        </div>
+                        <div class="field1">
+                            <p>Unit No.:</p>
+                            <input class="text" type="text" placeholder="Unit No." :value="unit.number" disabled>
+                        </div>
+                        <div class="field1">
+                            <p>Unit Building:</p>
+                            <input class="text" type="text" placeholder="   _________" :value="unit.building" disabled>
+                        </div>
+                        <div class="field1">
+                            <p>Unit Project:</p>
+                            <input class="text" type="text" placeholder="Unit Project" :value="unit.project" disabled>
+                        </div>
+                        <div class="field1">
+                            <p>Total Income:</p>
+                            <input class="text" type="text" placeholder="Total Income" :value="unit.income" disabled>
+                        </div>
+                        <div class="field1">
+                            <p>Total Fees:</p>
+                            <input class="text" type="text" placeholder="Total Fees" :value="unit.fees" disabled>
+                        </div>
+                        <div class="field1">
+                            <p>Total Money:</p>
+                            <input class="text" type="text" placeholder="Total Money" :value="unit.money" disabled>
+                        </div>
+                    </article>
+
                 </div>
-              </div>
-              <div class="ryt">
-                <input class="image" type="image" alt="user image" width="70px" height="70px" src="url(../../images/001.svg)">
-              </div>
-            </article>
-            <article class="down">
-              <input type="text" placeholder="ID">
-              <input type="text" placeholder="Phone">
-              <input type="text" placeholder="Email">
-              <input type="text" placeholder="Address">
-              <input type="text" placeholder="City">
-              <input type="text" placeholder="National ID">
-              <input type="text" placeholder="Notes">
-              <input type="text" placeholder="">
-              <input type="text" placeholder="">
-            </article>
-          </div>
-        </section>
-        <footer class="mini">
-          <div class="sub-container">
-            <article>
-              <h3>unit 1</h3>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rentable</p>
-              </div>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rented</p>
-              </div>
-              <input class="text" type="text" placeholder="Unit Type">
-              <input class="text" type="text" placeholder="Unit No.">
-              <input class="text" type="text" placeholder="Unit Building">
-              <input class="text" type="text" placeholder="Unit Project">
-              <input class="text" type="text" placeholder="Total Income">
-              <input class="text" type="text" placeholder="Total Fees">
-              <input class="text" type="text" placeholder="Total Money">
-            </article>
-            <article>
-              <h3>unit 1</h3>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rentable</p>
-              </div>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rented</p>
-              </div>
-              <input class="text" type="text" placeholder="Unit Type">
-              <input class="text" type="text" placeholder="Unit No.">
-              <input class="text" type="text" placeholder="Unit Building">
-              <input class="text" type="text" placeholder="Unit Project">
-              <input class="text" type="text" placeholder="Total Income">
-              <input class="text" type="text" placeholder="Total Fees">
-              <input class="text" type="text" placeholder="Total Money">
-            </article>
-            <article>
-              <h3>unit 1</h3>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rentable</p>
-              </div>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rented</p>
-              </div>
-              <input class="text" type="text" placeholder="Unit Type">
-              <input class="text" type="text" placeholder="Unit No.">
-              <input class="text" type="text" placeholder="Unit Building">
-              <input class="text" type="text" placeholder="Unit Project">
-              <input class="text" type="text" placeholder="Total Income">
-              <input class="text" type="text" placeholder="Total Fees">
-              <input class="text" type="text" placeholder="Total Money">
-            </article>
-            <article>
-              <h3>unit 1</h3>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rentable</p>
-              </div>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rented</p>
-              </div>
-              <input class="text" type="text" placeholder="Unit Type">
-              <input class="text" type="text" placeholder="Unit No.">
-              <input class="text" type="text" placeholder="Unit Building">
-              <input class="text" type="text" placeholder="Unit Project">
-              <input class="text" type="text" placeholder="Total Income">
-              <input class="text" type="text" placeholder="Total Fees">
-              <input class="text" type="text" placeholder="Total Money">
-            </article>
-            <article>
-              <h3>unit 1</h3>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rentable</p>
-              </div>
-              <div class="check-box">
-                  <input class="check" type="checkbox">
-                  <p>Rented</p>
-              </div>
-              <input class="text" type="text" placeholder="Unit Type">
-              <input class="text" type="text" placeholder="Unit No.">
-              <input class="text" type="text" placeholder="Unit Building">
-              <input class="text" type="text" placeholder="Unit Project">
-              <input class="text" type="text" placeholder="Total Income">
-              <input class="text" type="text" placeholder="Total Fees">
-              <input class="text" type="text" placeholder="Total Money">
-            </article>
-          </div>
-        </footer>
+            </footer>
         </div>
       </div>
     </section>
@@ -170,176 +170,48 @@
 
 <script>
 export default {
-  props:['userData']
+  props:[],
+  data(){
+    return{
+      userData:{},
+      id:this.$route.params.id,
+      btn1:"Edit",
+      editable: false,
+    }},
+    methods:{
+      edit:function(){
+        if(this.editable){ //clicked Save button
+          this.editable = false;
+          this.btn1="Edit";
+          /*id phone email address city nationalID notes*/
+          document.getElementById("clint")
+          document.getElementById("clientInfoGrand").classList.add("view");
+          document.getElementById("notes").disabled = true;
+          document.getElementById("id").disabled = true;
+          document.getElementById("phone").disabled = true;
+          document.getElementById("address").disabled = true;
+          document.getElementById("email").disabled = true;
+          document.getElementById("nationalID").disabled = true;
+          document.getElementById("city").disabled = true;
+
+        }
+        else{ //clicked Edit button
+          this.editable = true;
+          this.btn1="Save";
+          document.getElementById("clientInfoGrand").classList.remove("view");
+          document.getElementById("notes").disabled = false;
+          document.getElementById("id").disabled = false;
+          document.getElementById("phone").disabled = false;
+          document.getElementById("address").disabled = false;
+          document.getElementById("email").disabled = false;
+          document.getElementById("nationalID").disabled = false;
+          document.getElementById("city").disabled = false;
+        }
+      },
+  }
 }
 </script>
 
 <style lang="css" scoped>
-
-section.grand{
-    background-color:var(--light-gray-color);
-
-}
-section.grand .container{
-    width:99%;
-    margin:auto;
-}
-section.grand .container .parent{
-    border: 1px solid var(--middle-gray-color);
-
-    /* display: flex; */
-    margin: auto;
-    width:80%;
-}
-section.grand .container .parent header.mini{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-section.grand .container .parent header.mini{
-    border-bottom: 1px solid var(--middle-gray-color);
-}
-section.grand .container .parent header.mini article{
-    border-left: 1px solid var(--middle-gray-color);
-
-    display: flex;
-    width:12%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-}
-section.grand .container .parent header.mini article img{
-    width:24%;
-    height:28px;
-    background-color:gray;
-    display: flex;
-}
-section.grand .container .parent header.mini article div.ryt{
-    width:70%;
-    display: flex;
-    flex-wrap: wrap;
-}
-section.grand .container .parent header.mini article div.ryt h3{
-    flex-basis: 100%;
-}
-
-/*------------------------------------------------ */
-
-section.grand .container .parent section.mini{
-    padding: 20px 0;
-}
-section.grand .container .parent section.mini .sub-container{
-    width: 94%;
-    margin:auto;
-}
-section.grand .container .parent section.mini .sub-container article.up{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-section.grand .container .parent section.mini .sub-container article.up > *{
-    display: flex;
-}
-section.grand .container .parent section.mini .sub-container article.up div.lft{
-    flex-basis: 60%;
-    flex-wrap: wrap;
-}
-section.grand .container .parent section.mini .sub-container article.up div.lft > *{
-    display: flex;
-    width:95%;
-}
-section.grand .container .parent section.mini .sub-container article.up div.lft div.up{
-    align-items: center;
-}
-section.grand .container .parent section.mini .sub-container article.up div.lft div.down input.name{
-    width: 100%;
-    border: none;
-    background-color:transparent;
-    padding:20px;
-    border-bottom: 2px solid var(--body-color);
-    font-size: 30px;
-}
-section.grand .container .parent section.mini .sub-container article.up div.lft div.down input.name::placeholder{
-    color: var(--middle-gray-color);
-}
-section.grand .container .parent section.mini .sub-container article.up div.ryt input.image{
-    width: 70px;
-    height:70px;
-    /* border: none;
-    background-color:transparent;
-    padding:20px;
-    border-bottom: 2px solid var(--body-color);
-    font-size: 30px; */
-}
-section.grand .container .parent section.mini .sub-container article.up div.ryt{
-    flex-basis: 40%;
-    justify-content: flex-end;
-}
-section.grand .container .parent section.mini .sub-container article.down{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-section.grand .container .parent section.mini .sub-container article.down input{
-    width: 32%;
-    border: none;
-    background-color:transparent;
-    padding: 2px;
-    border-bottom: 2px solid var(--middle-gray-color);
-    font-size: 15px;
-    margin-bottom: 7px;
-}
-section.grand .container .parent section.mini .sub-container article.down input::placeholder{
-    color: var(--middle-gray-color);
-}
-
-/*-------------------------------------------------------------------- */
-
-section.grand .container .parent footer.mini{
-    padding: 20px 0;
-
-}
-section.grand .container .parent footer.mini .sub-container{
-    width: 94%;
-    margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-section.grand .container .parent footer.mini .sub-container article{
-    width:30%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-section.grand .container .parent footer.mini .sub-container article h3{
-    color:var(--body-color);
-    border-bottom:2px solid var(--middle-gray-color);
-    width:100%;
-    padding:5px;
-}
-section.grand .container .parent footer.mini .sub-container article p{
-    display: inline-block;
-    /* width:70px; */
-    margin-left:10px;
-}
-section.grand .container .parent footer.mini .sub-container article input.text{
-    width: 45%;
-    border: none;
-    background-color:transparent;
-    padding: 2px;
-    border-bottom: 2px solid var(--middle-gray-color);
-    font-size: 15px;
-    margin-bottom: 7px;
-}
-section.grand .container .parent footer.mini .sub-container article input.text::placeholder{
-    color: var(--middle-gray-color);
-}
-section.grand .container .parent footer.mini .sub-container article .check-box{
-    width:50%;
-    padding: 10px;
-}
 
 </style>
