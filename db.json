@@ -56,6 +56,62 @@
         "city": "بمزاجه",
         "nationalID": 6531865413168
       }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "username": "admin",
+            "full_name": "Admin's Name",
+            "branch": 1,
+            "branch_name": "Alexandria",
+            "email": "admin@admin.com",
+            "is_staff": true,
+            "is_active": true,
+            "notes": "The admin of the site"
+        },
+        {
+            "id": 2,
+            "username": "mohmed",
+            "full_name": "Mohamed Abbas",
+            "branch": 2,
+            "branch_name": "Cairo",
+            "email": "mohmed@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "notes": "The owner of the IPone X"
+        },
+        {
+            "id": 3,
+            "username": "yasser",
+            "full_name": "Yasser Ali",
+            "branch": 3,
+            "branch_name": "Matrouh",
+            "email": "yasser@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "notes": "Mr Yasser is the most elegent guy in Matrouh"
+        },
+        {
+            "id": 4,
+            "username": "karem",
+            "full_name": "Karem Khaled",
+            "branch": 3,
+            "branch_name": "Matrouh",
+            "email": "karem@gmail.com",
+            "is_staff": false,
+            "is_active": false,
+            "notes": "Deleted user"
+        },
+        {
+            "id": 5,
+            "username": "osama",
+            "full_name": "Osama Samy",
+            "branch": 1,
+            "branch_name": "Alexandria",
+            "email": "osama@yahoo.com",
+            "is_staff": false,
+            "is_active": true,
+            "notes": ""
+        }
     ]
-  
 }
